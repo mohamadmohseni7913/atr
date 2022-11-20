@@ -1,0 +1,364 @@
+//main
+.main {
+    // header
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+    //banner slider
+    .banner-Slider {
+        @include center;
+        margin: 10px 0;
+        justify-content: space-between;
+        padding: 0 15%;
+        height: 600px;
+        overflow: hidden;
+        // banner Right
+        &-Right {
+            @include fullSpace;
+            // display: flex;
+            // flex-direction: ;
+            // align-items: center;
+            width: 69%;
+            img {
+                @include fullSpace;
+            }
+            .inner {
+                position: absolute;
+                margin: 0 25px;
+                line-height: 2rem;
+                a {
+                    color: $active-Color;
+                    text-decoration: underline $active-Color 2px;
+                }
+            }
+        }
+        // banner left
+        &-Left {
+            @include fullSpace;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30%;
+            &-Top {
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+                height: 49%;
+                position: relative;
+                img {
+                    @include fullSpace;
+                }
+            }
+            &-Bottom {
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+                height: 49%;
+                position: relative;
+                img {
+                    @include fullSpace;
+                }
+            }
+            .inner {
+                position: absolute;
+                width: 150px;
+                margin: 0 25px;
+                line-height: 2rem;
+                a {
+                    color: $active-Color;
+                    text-decoration: underline $active-Color 2px;
+                }
+            }
+        }
+        img {
+            width: 100%;
+        }
+    }
+    //deal of day 
+    .deal-Of-Day {
+        @include center;
+        flex-direction: column;
+        margin: 30px 0;
+        padding: 0 15%;
+        //deal of day product
+        &-Products {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 15px 15px;
+            // border-top: 1px solid $active-Color;
+            border-bottom: 1px solid $border-color-opacity;
+            .product-Card {
+                // width: 20%;
+            }
+        }
+    }
+    //collection section 
+    .collection {
+        @include center;
+        flex-direction: column;
+        padding: 0 15%;
+        &-Top {
+            width: 100%;
+            @include center;
+            justify-content: space-between;
+            &-Section {
+                position: relative;
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+                width: 49%;
+            }
+            .inner {
+                position: absolute;
+                margin: 0 25px;
+                line-height: 2rem;
+                a {
+                    color: $active-Color;
+                    text-decoration: underline $active-Color 2px;
+                }
+            }
+        }
+        &-Down {
+            width: 100%;
+            margin: 10px 0;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            .inner {
+                position: absolute;
+                margin: 0 25px;
+                line-height: 2rem;
+                a {
+                    color: $active-Color;
+                    text-decoration: underline $active-Color 2px;
+                }
+                &-Price {
+                    &-Value {
+                        font-size: 28px;
+                        color: $active-Color;
+                    }
+                }
+            }
+        }
+        img {
+            width: 100%;
+        }
+    }
+    // product filter
+    .product-Filter {
+        @include center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 0 15%;
+        margin: 25px 0;
+        // product filter btn section 
+        &-Btn {
+            width: 30%;
+            @include center;
+            justify-content: space-between;
+            button {
+                border: none;
+                width: 30%;
+                padding: 15px;
+                border-radius: 20px;
+                background-color: black;
+                margin: 10px 0;
+                color: white;
+                transition: 0.3s;
+                &:hover {
+                    background-color: $active-Color;
+                }
+            }
+        }
+        //product filter product section 
+        &-Product-Section {
+            width: 100%;
+            @include center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .product-Card {
+                width: 20%;
+            }
+        }
+    }
+    // site Advantage
+    .site-Advantage {
+        @include center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 50px 15%;
+        background-color: $active-Color;
+        &-Section {
+            @include center;
+            i {
+                font-size: 70px;
+                color: white;
+                margin: 0 10px;
+            }
+            p {
+                @include center;
+                line-height: 25px;
+                align-items: flex-start;
+                flex-direction: column;
+                color: white;
+            }
+        }
+    }
+    // main blog
+    .main-Blog-Slider {
+        @include center;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 0 15%;
+        margin: 25px 0;
+        &-Post {
+            width: 100%;
+            @include center;
+            justify-content: space-between;
+        }
+    }
+    // instagram feed
+    .instagram-Feed {
+        @include center;
+        flex-direction: column;
+        border-top: 2px solid $border-color;
+        i {
+            margin-top: 35px;
+            font-size: 70px;
+            color: $active-Color;
+        }
+        .under-Line {
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 40px;
+        }
+        // section
+        &-Section {
+            @include center;
+            &-Post {
+                position: relative;
+                @include center;
+                width: 20%;
+                &-Overlay {
+                    @include center;
+                    @include fullSpace;
+                    position: absolute;
+                    background-color: rgba(0, 0, 0, 0.342);
+                    transform: scale(0);
+                    transition: 0.3s;
+                    transition-timing-function: ease-in-out;
+                    i {
+                        color: white;
+                    }
+                }
+                &:hover .instagram-Feed-Section-Post-Overlay {
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+    // footer
+    .footer {
+        @include center;
+        padding: 50px 15%;
+        flex-direction: column;
+        background-color: #f3f3f3;
+        // quick menu link
+        &-Links {
+            width: 100%;
+            @include center;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            div {
+                width: 33%;
+            }
+            // quick menu
+            .quick-Menu {
+                @include center;
+                flex-direction: column;
+                span {
+                    font-size: 20px;
+                    font-weight: bold;
+                    padding: 20px 0;
+                }
+                &-List {
+                    @include center;
+                    flex-direction: column;
+                    list-style: none;
+                    li {
+                        padding: 10px 0;
+                    }
+                }
+            }
+            // information
+            .information {
+                @include center;
+                flex-direction: column;
+                span {
+                    font-size: 20px;
+                    font-weight: bold;
+                    padding: 20px 0;
+                }
+                &-List {
+                    @include center;
+                    flex-direction: column;
+                    list-style: none;
+                    li {
+                        padding: 10px 0;
+                    }
+                }
+            }
+            // NEWSLETTER
+            .newSletter {
+                @include center;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                span {
+                    font-size: 20px;
+                    font-weight: bold;
+                    padding: 20px 0;
+                }
+                p {
+                    @include center;
+                    flex-direction: column;
+                    span {
+                        font-weight: 100;
+                        padding: 0px;
+                        font-size: 14px;
+                    }
+                }
+                input {
+                    width: 80%;
+                    margin: 20px 0;
+                    background-color: #fff;
+                    border: none;
+                    outline: none;
+                    border-radius: 25px;
+                    text-align: center;
+                    &::placeholder {
+                        color: rgb(202, 199, 199);
+                    }
+                }
+                button {
+                    width: 80%;
+                    padding: 20px 0;
+                    background-color: $active-Color;
+                    border: none;
+                    outline: none;
+                    border-radius: 25px;
+                    &:hover {
+                        background-color: black;
+                    }
+                }
+            }
+        }
+    }
+}

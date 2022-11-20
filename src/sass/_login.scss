@@ -1,0 +1,48 @@
+// login section 
+.login {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15%;
+    // sign up
+    .signUp {
+        margin: 0 5px;
+        flex: 1;
+        flex-direction: column;
+        border: 1px solid $border-color;
+        // header
+        &-Header {
+            font-weight: bold;
+            padding: 20px 10px;
+            border-bottom: 1px solid $border-color;
+        }
+        // content
+        &-Content {
+            padding: 0 10px;
+            display: flex;
+            flex-direction: column;
+            label {
+                padding: 10px;
+                font-weight: 600;
+                font-size: 12px;
+            }
+            button {
+                margin: 10px 0;
+                padding: 0 20px;
+                width: max-content;
+                background-color: $active-Color;
+                color: white;
+            }
+            input:focus {
+                border: none;
+            }
+            svg {
+                cursor: pointer;
+                transition: 0.4s;
+                font-size: 20px;
+                &:hover {
+                    fill: red;
+                }
+            }
+        }
+    }
+}

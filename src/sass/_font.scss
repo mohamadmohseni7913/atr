@@ -1,0 +1,23 @@
+// @import url('https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.css');
+// @import url('http://cdn.font-store.ir/shahab.css');
+// @import url('http://cdn.font-store.ir/behdad.css');
+// @import url('http://cdn.font-store.ir/nika.css');
+// @import url('http://cdn.font-store.ir/farbod.css');
+// @import url('http://cdn.font-store.ir/noon.css');
+// @import url('http://cdn.font-store.ir/ganjnameh.css');
+// @import url('https://cdn.fontcdn.ir/Font/Persian/Yekan/Yekan.css');
+// $font-yekan:Yekan;
+// $font-Shabnam:Shabnam;
+// $font-shahab:shahab;
+// $font-behdad:behdad;
+// $font-nika:nika;
+// $font-farbod:farbod;
+// $font-noon:noon;
+// $font-ganjnameh:ganjnameh;
+$font-iranyekan:IranYekan;
+@font-face {
+    font-family: IranYekan;
+    src: url(../../public/assets/fonts/webfonts/iranyekan/IRANYekanWebRegular.eot) format('eot'), url(../../public/assets/fonts/webfonts/iranyekan/IRANYekanWebRegular.ttf) format('ttf'), url(../../public/assets/fonts/webfonts/iranyekan/IRANYekanWebRegular.woff) format('woff'), url(../../public/assets/fonts/webfonts/iranyekan/IRANYekanWebRegular.woff2) format('woff2');
+}
+
+// @import url('./css/fontawesome.css');

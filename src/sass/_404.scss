@@ -1,0 +1,28 @@
+.page-404 {
+    @include center;
+    justify-content: space-evenly;
+    padding: 30px 15%;
+    &-Img {}
+    &-Detail {
+        line-height: 30px;
+        h1 {
+            padding: 30px 0;
+        }
+        p {
+            color: $text-color;
+            a {
+                text-decoration: underline 2px;
+            }
+        }
+        &-Btn {
+            @include center;
+            justify-content: flex-start;
+            padding: 10px 0;
+            button {
+                margin: 0 10px;
+                padding: 0px 10px;
+                background-color: $active-Color;
+            }
+        }
+    }
+}

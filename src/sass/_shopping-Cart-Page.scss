@@ -1,0 +1,58 @@
+.shopping-Cart-Page {
+    @include center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 15%;
+    justify-content: flex-start;
+    h2 {
+        padding: 20px 0;
+    }
+    // shopping cart page section
+    &-Section {
+        width: 100%;
+        padding: 15px;
+        border: 1px solid $border-color;
+        &-Product {
+            @include center;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid $border-color;
+            // img
+            &-Img {
+                width: 10%;
+            }
+            // detail
+            &-Detail {
+                @include center;
+                flex-direction: column;
+                // justify-content: flex-start;
+                align-items: flex-start;
+                width: 35%;
+                padding: 0 10px;
+                span:nth-child(2) {
+                    color: $text-color;
+                }
+            }
+            // Counter
+            &-Counter {
+                @include center;
+                justify-content: space-between;
+                padding: 5px;
+                width: 5%;
+                border: 1px solid $border-color;
+            }
+            // Price
+            &-Price {
+                @include center;
+                width: 25%;
+            }
+            // trash 
+            .i {
+                @include center;
+                justify-content: flex-end;
+                padding: 0 10px;
+                width: 25%;
+            }
+        }
+    }
+}

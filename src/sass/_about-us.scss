@@ -1,0 +1,106 @@
+.about-Us {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    &-Header {
+        width: 100%;
+        margin-bottom: 40px;
+        p {
+            width: max-content;
+            font-size: 16px;
+            font-weight: bold;
+            color: $black-font-color;
+            border-bottom: 2px solid $active-Color;
+            padding-bottom: 5px;
+        }
+    }
+    &-Ads {
+        width: 100%;
+        margin-bottom: 40px;
+        &-Section {
+            width: 100%;
+            position: relative;
+            img {
+                width: 100%;
+            }
+            &-Info {
+                width: 30%;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                top: 20%;
+                right: 5%;
+                h2 {
+                    font-size: 18px;
+                    font-weight: bold;
+                    color: $black-font-color;
+                    margin-bottom: 20px;
+                }
+                p {
+                    font-size: 14px;
+                    color: $careless-font-color;
+                    text-align: justify;
+                    margin-bottom: 20px;
+                }
+                .link {
+                    position: relative;
+                    width: max-content;
+                    padding-bottom: 20px;
+                    overflow: hidden;
+                    a {
+                        width: max-content;
+                        color: $black-font-color;
+                        overflow: hidden;
+                        .bottom-Bar {
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                        }
+                        &:hover {
+                            .bottom-Bar {
+                                opacity: 1;
+                                animation: bottomBarMotion 0.5s reverse;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-Security {
+        width: 100%;
+        margin-bottom: 40px;
+        &-Section {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            &-Part {
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                i {
+                    font-size: 52px;
+                    color: $active-Color;
+                    font-weight: 100;
+                    margin-bottom: 20px;
+                }
+                h4 {
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: $black-font-color;
+                    margin-bottom: 20px;
+                }
+                p {
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: $careless-font-color;
+                }
+            }
+        }
+    }
+}
